@@ -1,0 +1,70 @@
+<html>
+<head>
+	<title>Sorteo Domaining Europe 2014</title>
+	<script type='text/javascript'>
+		function aleat() {
+			 var al = Math.floor(Math.random() * 84) + 1;
+			 var a = document.getElementById('number');
+			 a.innerHTML = al;
+			console.log(a);
+		}
+		 
+	</script>
+	
+	<style>
+		* {
+			
+		}
+		body {
+			font-family: "Helvetiva Neue", "Helvetica", "OpenSans", "Arial", sans-serif;
+			color: #3366CC;
+			background-color: #FFF;
+			text-align: center;
+		}
+		header {
+			margin: 20px auto;
+		}
+		#number {
+			font-size: 10rem;
+			display: block;
+		}
+		footer {
+			position: absolute;
+			width: 100%;
+			left: 0;
+			bottom: 0;
+			color: #444;
+		}
+		small {
+			font-size: 1rem;
+		}
+				
+		button {
+			background-color: #3366EE;
+			color: white;
+			border: 0;
+			border-bottom: 10px solid #6699EE;
+			padding: 30px 5px;
+			font-size: 2rem;
+		}
+
+		button:hover {
+			background-color: #2255EE;
+		}
+		
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Gadgets DomainingEurope 2014</h1>
+		<img src="target.gif" />
+	</header>
+	<article>
+		<span id='number'>--</span>
+		<button id='boton' onclick='aleat();'>Generate number between 1 & 84</button>
+	</article>
+	<footer>
+		<small>Powered by Valencia Paella Systems</small>
+	</footer>
+</body>
+</html>
