@@ -1,19 +1,20 @@
 <html>
 <head>
-	<title>Sorteo Domaining Europe 2014</title>
+	<title>Sorteo Domaining Europe 2015</title>
 	<script type='text/javascript'>
+		var total = 150;
 		function aleat() {
-			 var al = Math.floor(Math.random() * 84) + 1;
+			 var al = Math.floor(Math.random() * total) + 1;
 			 var a = document.getElementById('number');
 			 a.innerHTML = al;
 			console.log(a);
 		}
-		 
+
 	</script>
-	
+
 	<style>
 		* {
-			
+
 		}
 		body {
 			font-family: "Helvetiva Neue", "Helvetica", "OpenSans", "Arial", sans-serif;
@@ -38,7 +39,7 @@
 		small {
 			font-size: 1rem;
 		}
-				
+
 		button {
 			background-color: #3366EE;
 			color: white;
@@ -51,20 +52,24 @@
 		button:hover {
 			background-color: #2255EE;
 		}
-		
+
 	</style>
 </head>
 <body>
 	<header>
-		<h1>Gadgets DomainingEurope 2014</h1>
-		<img src="target.gif" />
+		<h1>Gadgets DomainingEurope 2015</h1>
+		<h2>Valencia #DomainingEurope</h2>
 	</header>
 	<article>
 		<span id='number'>--</span>
-		<button id='boton' onclick='aleat();'>Generate number between 1 & 84</button>
+		<button id='boton' onclick='aleat();'>Generate number between 1 &
+			<script charset="utf-8">
+				document.write(total);
+			</script>
+		</button>
 	</article>
 	<footer>
-		<small>Powered by Valencia Paella Systems</small>
+		<small>Powered by <a href="http://zeura.com"><img src="images/zeura.png" /></a></small>
 	</footer>
 </body>
 </html>
